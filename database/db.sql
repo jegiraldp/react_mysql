@@ -1,0 +1,7 @@
+create table tareas(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(200) NOT NULL,
+    descripcion VARCHAR(300),
+    hecho BOOLEAN NOT NULL DEFAULT 0,
+    creado TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP 
+)
