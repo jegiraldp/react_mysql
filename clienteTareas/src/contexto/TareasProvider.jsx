@@ -27,7 +27,7 @@ export const TareasContextoProvider = ({ children }) => {
 
   const borrarTarea = async (id) => {
     try {
-      const respuesta = await borrarTareaRequest(id);
+      await borrarTareaRequest(id);
       setTareas(tareas.filter((tareas) => tareas.id !== id));
     } catch (error) {
       console.error(error);
@@ -44,7 +44,7 @@ export const TareasContextoProvider = ({ children }) => {
 
   const crearTarea = async (tarea) => {
     try {
-      const respuesta = await crearTareaRequest(tarea);
+      await crearTareaRequest(tarea);
       //setTareas([...tareas, respuesta.data])
     } catch (error) {
       console.log(error);
