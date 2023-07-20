@@ -68,7 +68,7 @@ function TareasFormulario() {
             <input
               type="text"
               name="titulo"
-              placeholder="Escriba un título"
+              placeholder="Escriba un título.."
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.titulo}
@@ -80,7 +80,7 @@ function TareasFormulario() {
               </div>
             }
             <label className="block px-2 py-1 rounded-md w-full">
-              Descripcion
+              Descripción
             </label>
             <textarea
               name="descripcion"
